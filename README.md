@@ -1,11 +1,8 @@
 # Cycling Traffic - Dublin Council Counters
 
-This project is the result of an academic assignment where I applied **Exploratory Data Analysis (EDA)** to understand cycling traffic patterns in Dublin. The dataset comes from sensors managed by Dublin City Council, which record the number of cyclists passing by every hour.
+This project is the result of an academic assignment where I applied **Exploratory Data Analysis (EDA)** to understand cycling traffic patterns in Dublin. The dataset comes from sensors managed by [Dublin City Council](https://data.gov.ie/dataset/dublin-city-centre-cycle-counts), which record the number of cyclists passing by every hour.
 
 ![Counters Location](outputs/counters_loc.jpg)
-
-This work was part of the **Data Exploration & Preparation** module (Semester 7) of my degree at **CCT College Dublin**.
-
 
 ## Objectives
 
@@ -13,7 +10,7 @@ The main idea was to analyse the data in a way that could help city planning and
 
 - Understanding how cycling traffic varies by location.
 - Identifying patterns over the year and throughout the day.
-- Using clustering and PCA to find structure in the data and support decisions.
+- Using clustering and PCA to find structure in the data.
 
 
 ## Key Results
@@ -24,7 +21,6 @@ The main idea was to analyse the data in a way that could help city planning and
 Some places had a lot more traffic than others.  
 - Grove Road Totem had the highest numbers (close to 1 million cyclists).  
 - Richmond Street had the lowest (about 2,200 cyclists).  
-
 
 
 ### 2. Key Areas Grouped by Traffic  
@@ -59,8 +55,8 @@ So, commuting times make a big difference in traffic flow.
 Based on the analysis, I came up with a few points that might help with planning:
 
 - **Focus on busy areas** like Grove Road and Clontarf when investing in new infrastructure.
-- **Cold weather has a clear impact** — public transport may need to be adjusted during those periods.
-- **Morning and evening peaks** show when people are commuting — good times to optimise traffic signals and flow.
+- **Cold weather has a clear impact** public transport may need to be adjusted during those periods.
+- **Morning and evening peaks** show when people are commuting, and good periods to optimise traffic signals and flow.
 - **Roadworks should be planned carefully**, so we don’t lose valuable cycling data.
 - **Clustering techniques** helped to show where and when usage patterns are similar.
 
@@ -86,3 +82,7 @@ The whole project was done in Python using:
 - [Zelt Eco-Multi Counter](https://traffictechnology.co.uk/blog/portfolio/eco-display-light/)  
 - [Marsja: Transform Skewed Data](https://www.marsja.se/transform-skewed-data-using-square-root-log-box-cox-methods-in-python/)  
 - Iqbal, M. (2024). *Data Exploration & Preparation*, CCT College Dublin — [Module page](https://moodle.cct.ie/course/view.php?id=1705)
+
+---
+
+This work was part of the **Data Exploration & Preparation** module (Semester 7) of my degree at **CCT College Dublin**.
