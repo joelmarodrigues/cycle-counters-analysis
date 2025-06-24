@@ -2,93 +2,85 @@
 
 This project applies **Exploratory Data Analysis (EDA)** techniques to investigate cycling traffic patterns in Dublin City. The dataset, provided by the Dublin City Council, contains the number of cyclists counted hourly across different street sensors.
 
----
+![Counters Location](outputs/counters_loc.jpg)
 
-## Project Context
-
-This work was developed as part of the **Data Exploration & Preparation** module (Semester 7) of the BSc (Hons) in Computing & IT at **CCT College Dublin**.
+Developed as part of the **Data Exploration & Preparation** module (Semester 7)  
+BSc (Hons) in Computing & IT — CCT College Dublin
 
 ---
 
 ## Objectives
 
-- Identify high and low traffic areas for cyclists.
-- Understand seasonal and daily cycling trends.
-- Use clustering (K-Means) and PCA to uncover insights.
-- Support planning decisions through data-driven findings.
+- Identify traffic patterns across multiple locations.
+- Detect seasonal variations and daily peak hours.
+- Apply clustering and PCA to support urban planning decisions.
 
 ---
 
-## Visual Insights
+## Key Results
 
-**1. Sensor Correlation Heatmap**  
-![Sensor Correlation](outputs/Correlation%20Between%20Cycle%20Counters.png)
-
----
-
-**2. Daily Cyclist Volume (2023)**  
-![Daily Count](outputs/Daily%20Number%20of%20Cyclist%20in%202023.png)
-
----
-
-**3. Seasonal Trends**  
-![Seasonal Trends](outputs/Seasonal%20Number%20of%20Cyclists%20in%20Dublin%20in%202023.png)
-
----
-
-**4. Distribution of Cyclists per Location**  
+### 1. Cyclist Distribution by Location  
 ![Total Cyclists](outputs/Total%20Cyclists%20in%20Dublin%20in%20202.png)
 
----
-
-**5. Distribution Histogram**  
-![Histogram](outputs/Distribution%20Histogram.png)
+**Highest Traffic:** Grove Road Totem (~1 million cyclists)  
+**Lowest Traffic:** Richmond Street (~2,200 cyclists)
 
 ---
 
-**6. Skewness & Kurtosis**  
-![Skewness & Kurtosis](outputs/Distribution%20of%20Skewness%20and%20Kurtosis.jpg)
+### 2. Key Areas Clustered by Density  
+![Key Areas](outputs/Correlation%20Between%20Cycle%20Counters.png)
+
+- Grove Road Totem: High Traffic  
+- Richmond Street: Moderate  
+- Clontarf: Variable depending on time
 
 ---
 
-**7. K-Means Cluster Overview**  
-![Clusters](outputs/Average%20Values%20of%20Key%20Columns%20by%20Top%20Clusters.png)
+### 3. Seasonal Traffic Pattern  
+![Seasonal](outputs/Seasonal%20Number%20of%20Cyclists%20in%20Dublin%20in%202023.png)
+
+- Peak: May (~600k), June (~550k)  
+- Lowest: December (~300k)  
+- Clear correlation with warmer months
 
 ---
 
-## 📁 Project Structure
+### 4. Daily Peak Hours  
+![Daily Peaks](outputs/Daily%20Number%20of%20Cyclist%20in%202023.png)
 
-| File                                | Description                                 |
-|-------------------------------------|---------------------------------------------|
-| `cycle_data.csv`                    | Main processed dataset                      |
-| `cycle_data_PCA.csv`                | Dataset with PCA components                 |
-| `cycle_data_pca_scaled.csv`         | Scaled version for clustering               |
-| `cycle-counts-2023.csv`             | Raw counts by Dublin Council                |
-| `counters_locations.csv`            | Sensor metadata (locations)                 |
-| `/outputs/`                         | Images used in the visual analysis          |
-| `std.csv`                           | Std values by cluster                       |
-| `.ipynb` + `.pptx`                  | Report and slides (final submission)        |
+- 8:00 AM: ~1560 cyclists  
+- 5:00 PM: ~1510 cyclists  
+Morning and evening commute dominate daily trends.
 
 ---
 
-## Technologies
+## Conclusions
+
+- **Plan Infrastructure:** Grove Road, Richmond Street, and Clontarf should be prioritised for cyclist infrastructure.  
+- **Seasonal Variation:** Strong drop in cold months — public transport demand may need adjustment accordingly.  
+- **Peak Hours:** Critical times are school/work commute. Improve traffic lights and signage to reduce congestion.  
+- **Roadworks Impact:** Cycle counters should be relocated during roadworks to avoid data loss.  
+- **Future Work:** Use clustering to optimise local cycling policies.
+
+---
+
+## Tools Used
 
 - Python (Jupyter Notebook)
-- Pandas, NumPy, Seaborn, Matplotlib
-- Scikit-learn (KMeans, PCA)
-- Feature Engineering, Outlier Detection, Standardisation
+- Pandas, NumPy, Matplotlib, Seaborn
+- Scikit-learn (PCA, KMeans)
 
 ---
 
 ## References
 
 - Dublin City Council and the NTA: Dataset available at https://data.gov.ie/dataset/dublin-city-centre-cycle-counts  
-- IBM (n.d.): [What is EDA](https://www.ibm.com/topics/exploratory-data-analysis)  
-- [Guide to EDA – Towards Data Science](https://towardsdatascience.com/a-data-scientists-essential-guide-to-exploratory-data-analysis-25637eee0cf6)  
-- [SciPy Interpolation Docs](https://docs.scipy.org/doc/scipy/tutorial/interpolate.html)  
-- [Scatter Plots – Atlassian Guide](https://www.atlassian.com/data/charts/what-is-a-scatter-plot)  
-- [Leaflet JS Library](https://leafletjs.com/)  
-- [OpenStreetMap](https://www.openstreetmap.org/)  
-- [Zelt Eco-Multi Counter](https://traffictechnology.co.uk/blog/portfolio/eco-display-light/)  
-- [Transform Skewed Data – Marsja](https://www.marsja.se/transform-skewed-data-using-square-root-log-box-cox-methods-in-python/)  
-- Iqbal, M. (2024): *Data Exploration & Preparation*, CCT College Dublin – [Module Page](https://moodle.cct.ie/course/view.php?id=1705)
+- IBM (n.d.): What is Exploratory Data Analysis (EDA)? Available at https://www.ibm.com/topics/exploratory-data-analysis  
+- Towards Data Science: Guide to Exploratory Data Analysis. Available at https://towardsdatascience.com/a-data-scientists-essential-guide-to-exploratory-data-analysis-25637eee0cf6  
+- SciPy Documentation: Interpolation Using SciPy. Available at https://docs.scipy.org/doc/scipy/tutorial/interpolate.html  
+- Atlassian (n.d.): A Complete Guide to Scatter Plots. Available at https://www.atlassian.com/data/charts/what-is-a-scatter-plot  
+- Leaflet: JavaScript Library for Interactive Maps. Available at https://leafletjs.com/  
+- OpenStreetMap Contributors (n.d.): OpenStreetMap Data. Available at https://www.openstreetmap.org/  
+- Eco-Multi Counter from Zelt Diamond Loop: Available at https://traffictechnology.co.uk/blog/portfolio/eco-display-light/  
+- Marsja, E. (n.d.): How to Use Square Root, Log, & Box-Cox Transformation in Python. Available at https://www.marsja.se/transform-skewed-data-using-square-root-log-box-cox-methods-in-python/  
+- Iqbal, M. (2024): Data Exploration & Preparation. Delivered as part of the Data Analysis module, BSc (Hons) in Computing in IT, CCT College Dublin. Available at https://moodle.cct.ie/course/view.php?id=1705  
