@@ -1,0 +1,9 @@
+,Time,Clontarf - James Larkin Rd,Clontarf - James Larkin Rd Cyclist West,Clontarf - James Larkin Rd Cyclist East,Clontarf - Pebble Beach Carpark,Clontarf - Pebble Beach Carpark Cyclist West,Clontarf - Pebble Beach Carpark Cyclist East,Griffith Avenue (Clare Rd Side),Griffith Avenue (Clare Rd Side) Cyclist South,Griffith Avenue (Lane Side),Griffith Avenue (Lane Side) Cyclist South,Grove Road Totem,Grove Road Totem OUT,Grove Road Totem IN,Richmond Street Inbound,Richmond Street Inbound Cyclist South,Richmond Street Inbound Cyclist North,Richmond Street Outbound,Richmond Street Outbound Cyclist North,Richmond Street Outbound Cyclist South,weekday
+count,8759,8759,8759,8759,8759,8759,8759,8759,8759,8759,8759,8759,8759,8759,8759,8759,8759,8759,8759,8759,8759
+mean,46:11.0,36.288275,17.79895,18.489325,51.249572,23.872817,27.393538,11.364083,11.364083,3.798721,3.798721,110.456102,48.419568,62.036534,52.205503,0.254938,51.950565,45.493435,0.254139,45.239297,3.007878
+min,01/01/2023 00:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25%,02/04/2023 06:30,3,2,1,5,2,3,2,2,0,0,27,12,11,11,0,11,11,0,11,1
+50%,02/07/2023 12:00,23,10,10,33,14,15,8,8,0,0,82,32,43,51,0,51,36,0,35,3
+75%,01/10/2023 17:30,56,27,27,78,35,38,16,16,4,4,130,58,70,78,0,77.5,63,0,63,5
+max,31/12/2023 23:00,301,145,159,413,200,269,76,76,149,149,802,406,689,278,4,277,309,5,308,6
+std,NaN,40.601238,20.770857,23.07603,57.336971,28.642325,33.740142,12.191973,12.191973,9.876042,9.876042,122.013489,58.612451,87.417815,44.149151,0.538506,44.012794,44.49805,0.552588,44.341824,2.003379
